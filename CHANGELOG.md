@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-21)
+## Unreleased (2025-12-24)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`13dc3be`](https://github.com/stdlib-js/stdlib/commit/13dc3be658a96c61efecced1b0639f63081cf67d) - **docs:** improve doctests for ndarray instances in `ndarray/count-if` [(#9339)](https://github.com/stdlib-js/stdlib/pull/9339) _(by Lokesh Ranjan)_
 -   [`67f4feb`](https://github.com/stdlib-js/stdlib/commit/67f4feb3b59fc5466e8302977634d3d5113467a8) - **style:** remove space _(by Athan Reines)_
 -   [`b3d811d`](https://github.com/stdlib-js/stdlib/commit/b3d811d4d6ba1aed9aa1c5e012bba252c99929b6) - **refactor:** reorder expressions _(by Athan Reines)_
 -   [`d76442e`](https://github.com/stdlib-js/stdlib/commit/d76442e623bf8b7e8e4d50b80e90315b84cbf771) - **refactor:** add missing assertion _(by Athan Reines)_
@@ -41,9 +42,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Lokesh Ranjan
 
 </section>
 

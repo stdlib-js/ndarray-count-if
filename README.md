@@ -86,10 +86,7 @@ var x = array( [ [ [ 1.0, 2.0 ] ], [ [ 3.0, 4.0 ] ], [ [ 0.0, 6.0 ] ] ] );
 
 // Perform reduction:
 var out = countIf( x, clbk );
-// returns <ndarray>
-
-var v = out.get();
-// returns 5
+// returns <ndarray>[ 5 ]
 ```
 
 The function accepts the following arguments:
@@ -108,7 +105,6 @@ By default, the function performs a reduction over all elements in a provided [`
 
 ```javascript
 var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 function clbk( value ) {
     return value > 0.0;
@@ -123,17 +119,13 @@ var opts = {
     'dims': [ 1, 2 ]
 };
 var out = countIf( x, opts, clbk );
-// returns <ndarray>
-
-var v = ndarray2array( out );
-// returns [ 2, 2, 1 ]
+// returns <ndarray>[ 2, 2, 1 ]
 ```
 
 By default, the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a shape matching only the non-reduced dimensions of the input [`ndarray`][@stdlib/ndarray/ctor] (i.e., the reduced dimensions are dropped). To include the reduced dimensions as singleton dimensions in the output [`ndarray`][@stdlib/ndarray/ctor], set the `keepdims` option to `true`.
 
 ```javascript
 var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 function clbk( value ) {
     return value > 0.0;
@@ -149,10 +141,7 @@ var opts = {
     'keepdims': true
 };
 var out = countIf( x, opts, clbk );
-// returns <ndarray>
-
-var v = ndarray2array( out );
-// returns [ [ [ 2 ] ], [ [ 2 ] ], [ [ 1 ] ] ]
+// returns <ndarray>[ [ [ 2 ] ], [ [ 2 ] ], [ [ 1 ] ] ]
 ```
 
 To set the predicate function execution context, provide a `thisArg`.
@@ -161,7 +150,6 @@ To set the predicate function execution context, provide a `thisArg`.
 
 ```javascript
 var array = require( '@stdlib/ndarray-array' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 function clbk( value ) {
     this.count += 1;
@@ -179,10 +167,7 @@ var ctx = {
 
 // Perform reduction:
 var out = countIf( x, clbk, ctx );
-// returns <ndarray>
-
-var v = out.get();
-// returns 5
+// returns <ndarray>[ 5 ]
 
 var count = ctx.count;
 // returns 6
@@ -211,13 +196,10 @@ var y = empty( [], {
 
 // Perform reduction:
 var out = countIf.assign( x, y, clbk );
-// returns <ndarray>
+// returns <ndarray>[ 5 ]
 
 var bool = ( out === y );
 // returns true
-
-var v = y.get();
-// returns 5
 ```
 
 The function accepts the following arguments:
@@ -237,7 +219,6 @@ By default, the function performs a reduction over all elements in a provided [`
 ```javascript
 var array = require( '@stdlib/ndarray-array' );
 var empty = require( '@stdlib/ndarray-empty' );
-var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 function clbk( value ) {
     return value > 0.0;
@@ -257,12 +238,10 @@ var opts = {
     'dims': [ 1, 2 ]
 };
 var out = countIf.assign( x, y, opts, clbk );
+// returns <ndarray>[ 2, 2, 1 ]
 
 var bool = ( out === y );
 // returns true
-
-var v = ndarray2array( y );
-// returns [ 2, 2, 1 ]
 ```
 
 </section>
@@ -426,8 +405,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
