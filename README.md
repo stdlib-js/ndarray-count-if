@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import countIf from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@esm/index.mjs';
+import countIf from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@esm/index.mjs';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@v0.1.0-esm/index.mjs';
 ```
 
 #### countIf( x\[, options], predicate\[, thisArg] )
@@ -267,7 +267,7 @@ import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-arra
 import fillBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-fill-by@esm/index.mjs';
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
 var isPositiveNumber = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-positive-number' ).isPrimitive;
-import countIf from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@esm/index.mjs';
+import countIf from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-count-if@v0.1.0-esm/index.mjs';
 
 var x = zeros( [ 2, 4, 5 ], {
     'dtype': 'float64'
