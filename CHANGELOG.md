@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-19)
+## Unreleased (2026-08-22)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`668ccdd`](https://github.com/stdlib-js/stdlib/commit/668ccdd7e8a924d21f431ca83782bb8f6af724f2) - **fix:** add missing arguments to `format` calls [(#14517)](https://github.com/stdlib-js/stdlib/pull/14517) _(by Philipp Burckhardt)_
 -   [`3116666`](https://github.com/stdlib-js/stdlib/commit/3116666b3e530b2e6fb161924ae4c43cdf02905b) - **docs:** correct TSDoc across `ndarray` TypeScript declarations [(#12635)](https://github.com/stdlib-js/stdlib/pull/12635) _(by Philipp Burckhardt, Athan Reines)_
 -   [`6d6b9d4`](https://github.com/stdlib-js/stdlib/commit/6d6b9d42d8904ca49fb55e2ca464780573886aa0) - **bench:** refactor to use string interpolation in `@stdlib/ndarray` [(#11446)](https:-/github.com/stdlib-js/stdlib/pull/11446) _(by Karan Anand)_
 
